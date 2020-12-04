@@ -45,13 +45,19 @@ http://www.templatemo.com/tm-486-new-event
 	  $('#status').html('Wallet Connected')
         } catch (err) {
           $('#status').html('Access Denied. Refresh to Connect')
+	  $('#price').html('connect wallet to view')
+	  $('#price2').html('connect wallet to view')
         }
       } else if (window.web3) {
         window.web3 = new Web3(web3.currentProvider)
         initPayButton()
 	initSellButton()
+	var result = web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price').html(res.toNumber()/(1000000000))});
+	var result = web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price2').html(res.toNumber()/(1000000000))});      
       } else {
         $('#status').html('Wallet not installed')
+	$('#price').html('connect wallet to view')
+	$('#price2').html('connect wallet to view')
       }	    
     })
 		  
