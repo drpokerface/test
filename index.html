@@ -22,7 +22,37 @@ http://www.templatemo.com/tm-486-new-event
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>	
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		
+    var json = new XMLHttpRequest(); // start a new variable to store the JSON in
+json.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) { // if HTTP header 200 - ok
+    var object = JSON.parse(this.responseText); // set the variable 'object' to whatever we get back, in our case it is an array of 10 different arrays
+
+  for(var i=0;i<object.length;i++){   // looping through json
+
+  var item = object[i];
+       if(item["symbol"] === "ETH"){   // finding when symbol is ETH
+              var usdValue = "$" + item["price_usd"];    // Fetching price_usd value
+              console.log(document.getElementById("data").innerHTML = usdValue);
+	      console.log('nfnfn'); 
+
+       }
+   }
+  }
+};
+
+
+json.open(
+  "GET", // method
+  "https://api.coinmarketcap.com/v1/ticker/ethereum/", // url
+  true // async
+); // initialise the request
+json.send(); //send request
+
+		
+	</script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script type="text/javascript">
     const contract_address = "0x8e112A38817AE44D391E4ad0F568c701e225Bf07";
