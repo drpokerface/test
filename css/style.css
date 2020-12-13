@@ -307,7 +307,7 @@ footer {
 }
 .bgTop {
     z-index: 15;
-    opacity: 0.5;
+    opacity: 1;
 }
 .bgMiddle {
     z-index: 10;
