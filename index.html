@@ -31,6 +31,7 @@ http://www.templatemo.com/tm-486-new-event
       if (window.ethereum) {
         window.web3 = new Web3(ethereum);
 	userAccount = ethereum.selectedAddress;
+        $('#status').html('Wallet Connected')
 	web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price').html(res.toNumber()/(1000000000))});
 	web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price2').html(res2.toNumber()/(1000000000))});
         web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err1, res1){ web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price3').html(res1.toNumber()/(1000000000)*res2.toNumber()/(1000000000))});
@@ -131,7 +132,7 @@ http://www.templatemo.com/tm-486-new-event
 				<span class="icon icon-bar"></span>
 			</button>
 		</div>
-		<h4><img class="wow fadeIn" data-wow-delay="0s" src="images/vg.png" width="18" height="18"><span class="wow fadeIn" data-wow-delay="2.4s" id='account' style="color:white" class="smoothScroll"></span><span class="wow fadeIn" data-wow-delay="2.4s" id='status' style="color:white" class="smoothScroll"></h4></span>
+		<h4><img class="wow fadeIn" data-wow-delay="0s" src="images/vg.png" width="18" height="18"><span class="wow fadeIn" data-wow-delay="2.4s" id='status' style="font-family:Potra" class="smoothScroll"></h4></span>
 		<!--<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><p id='account' style="color:white" class="smoothScroll"></p></li>
