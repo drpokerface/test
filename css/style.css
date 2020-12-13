@@ -2,17 +2,6 @@
 New Event
 http://www.templatemo.com/tm-486-new-event
 */
-body {
-margin:0;
-padding:0;
-overflow:hidden;
-background-color:black;
-}
-section{
-height:100%;
-width:100%;
-  position:absolute ;  background:radial-gradient(#333,#000);
-}
 .leaf{
     position:absolute ;
     width:100%;
