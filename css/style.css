@@ -200,7 +200,8 @@ footer {
 .custom-navbar {
     margin-bottom: 100;
     padding-bottom: 7px;
-    background-color: ##111470;
+    background-color: #111470;
+    position: fixed;
 }
 /*
 .custom-navbar .navbar-brand {
