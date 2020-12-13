@@ -27,7 +27,10 @@ http://www.templatemo.com/tm-486-new-event
 	  <script type="text/javascript">
     const contract_address = "0x8e112A38817AE44D391E4ad0F568c701e225Bf07";
     const abi = [{"constant":false,"inputs":[{"name":"referral","type":"address"}],"name":"buyVirtualGold","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"total","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"account","type":"address"}],"name":"getQuantity","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"virtualGoldPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"sellVirtualGold","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"quantity","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"increaseTokenPrice","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}];
-    window.addEventListener('load', async () => {
+    window.onbeforeunload = function () {
+ 	 window.scrollTo(0, 0);
+	}
+      window.addEventListener('load', async () => {
       if (window.ethereum) {
         window.web3 = new Web3(ethereum);
 	userAccount = ethereum.selectedAddress;
@@ -132,7 +135,7 @@ http://www.templatemo.com/tm-486-new-event
 				<span class="icon icon-bar"></span>
 			</button>
 		</div>
-		<img class="wow fadeIn" data-wow-delay="0s" src="images/vg.png" width="40" height="40"><span class="wow fadeIn" data-wow-delay="2.4s" id='account' style="color:white" class="smoothScroll"></span><span class="wow fadeIn" data-wow-delay="2.4s" id='status' style="color:white" class="smoothScroll"></span>
+		<h4><img class="wow fadeIn" data-wow-delay="0s" src="images/vg.png" width="40" height="40"><span class="wow fadeIn" data-wow-delay="2.4s" id='account' style="color:white" class="smoothScroll"></span><span class="wow fadeIn" data-wow-delay="2.4s" id='status' style="color:white" class="smoothScroll"></h4></span>
 		<!--<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><p id='account' style="color:white" class="smoothScroll"></p></li>
