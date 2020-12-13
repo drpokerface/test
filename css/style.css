@@ -200,7 +200,7 @@ footer {
 .custom-navbar {
     margin-bottom: 100;
     padding-bottom: 0px;
-    padding-top: 0px;
+    height: 800px;
     background-color: #000000;
     position: fixed;
 }
