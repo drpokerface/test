@@ -51,6 +51,9 @@ http://www.templatemo.com/tm-486-new-event
 	  if(userAccount== null){
 		window.location.reload();
 	  }
+	  if(userAccount==""){
+		$('#status').html('Wallet is locked')
+	  }
 	  console.log(userAccount);
 	  $('#status').html('Wallet Connected'+userAccount)
         } catch (err) {
