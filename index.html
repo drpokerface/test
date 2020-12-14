@@ -49,13 +49,13 @@ http://www.templatemo.com/tm-486-new-event
           initPayButton()
 	  initSellButton()
 	  if(userAccount== null){
+		$('#status').html('RELOADING');
 		window.location.reload();
 	  }
-	  if(userAccount==""){
-		$('#status').html('Wallet is locked')
+	  if(userAccount!=null){
+		$('#status').html('Wallet Connected '+userAccount);
 	  }
 	  console.log(userAccount);
-	  $('#status').html('Wallet Connected '+userAccount)
         } catch (err) {
           $('#status').html('Access Denied. Refresh to Connect')
 	  $('#price').html('(please connect wallet to view)')
