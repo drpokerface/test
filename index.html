@@ -48,7 +48,7 @@ http://www.templatemo.com/tm-486-new-event
           await ethereum.enable();
           initPayButton()
 	  initSellButton()
-	  $('#status').html('Wallet Connected')
+	  $('#status').html('Wallet Connected'+userAccount)
         } catch (err) {
           $('#status').html('Access Denied. Refresh to Connect')
 	  $('#price').html('(please connect wallet to view)')
