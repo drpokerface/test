@@ -51,6 +51,7 @@ http://www.templatemo.com/tm-486-new-event
 	  if(userAccount== null){
 		window.location.reload();
 	  }
+	  console.log(userAccount);
 	  $('#status').html('Wallet Connected'+userAccount)
         } catch (err) {
           $('#status').html('Access Denied. Refresh to Connect')
