@@ -25,6 +25,18 @@ http://www.templatemo.com/tm-486-new-event
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script type="text/javascript">
+		  function selectText(containerid) {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
     const contract_address = "0x8e112A38817AE44D391E4ad0F568c701e225Bf07";
     const abi = [{"constant":false,"inputs":[{"name":"referral","type":"address"}],"name":"buyVirtualGold","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"total","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"account","type":"address"}],"name":"getQuantity","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"virtualGoldPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"sellVirtualGold","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"quantity","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"increaseTokenPrice","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}];
     window.onbeforeunload = function () {
@@ -350,7 +362,8 @@ http://www.templatemo.com/tm-486-new-event
 			</div>
 
 			<div class="wow fadeIn" data-wow-delay="0.3s">
-				<br><h3 style="color:white"><span style="color:white;"><div unselectable="on">Your referral link : </div></span><span style="color:gold;" id="link"></span><br><br><br>Tell others about virtualgold and ask them to enter your wallet address in the referral code section just above the invest button. This way you would recieve a <span style="color:gold">bonus of 5% of every investment</span> made with your referral code. Additionally the investor who invests using your referral code would recieve a <span style="color:gold">1% bonus.</span> This is done to incentivize investors to use your referral code. All bonuses are paid in virtualgold. Also please note that in order to be eligible for this 5% referral commission, you need to be a virtualgold holder(no minimum required investment). The quantity owned by you should be grater than 0.00 grams</h3>
+				<br><h3 style="color:white"><span style="color:white;"><div id="selectable" onclick="selectText('selectable')">http://example.com/page.htm</div>
+<div unselectable="on">Your referral link : </div></span><span style="color:gold;" id="link"></span><br><br><br>Tell others about virtualgold and ask them to enter your wallet address in the referral code section just above the invest button. This way you would recieve a <span style="color:gold">bonus of 5% of every investment</span> made with your referral code. Additionally the investor who invests using your referral code would recieve a <span style="color:gold">1% bonus.</span> This is done to incentivize investors to use your referral code. All bonuses are paid in virtualgold. Also please note that in order to be eligible for this 5% referral commission, you need to be a virtualgold holder(no minimum required investment). The quantity owned by you should be grater than 0.00 grams</h3>
 			</div>
 		</div>
 	</div>
