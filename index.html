@@ -71,6 +71,7 @@ http://www.templatemo.com/tm-486-new-event
 		$('#status').html('WALLET CONNECTED');
 		web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price').html(res.toNumber()/(1000000000)+' ETHhh')});
 		web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price2').html(res2.toNumber()/(1000000000)+' gramshhh')});
+		web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err1, res1){ web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price3').html(res1.toNumber()/(1000000000)*res2.toNumber()/(1000000000)+' ETHhhh')});
 		$('#link').html('https://virtualgold.io/?ref='+userAccount);
 	  }
 	  console.log(userAccount);
