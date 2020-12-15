@@ -44,7 +44,11 @@ http://www.templatemo.com/tm-486-new-event
 	}
       window.addEventListener('load', async () => {
       if (window.ethereum) {
-        //paste here
+        window.web3 = new Web3(ethereum);
+	userAccount = ethereum.selectedAddress;
+	web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price').html(res.toNumber()/(1000000000)+' ETH')});
+	web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price2').html(res2.toNumber()/(1000000000)+' grams')});
+        web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err1, res1){ web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price3').html(res1.toNumber()/(1000000000)*res2.toNumber()/(1000000000)+' ETH')});
 });
 
 	//var owner = myContractInstance.total.call();
@@ -66,12 +70,6 @@ http://www.templatemo.com/tm-486-new-event
 	  if(userAccount!=null){
 		$('#status').html('WALLET CONNECTED');
 		$('#link').html('https://virtualgold.io/?ref='+userAccount);
-		window.web3 = new Web3(ethereum);
-	        userAccount = ethereum.selectedAddress;
-		web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err, res){ $('#price').html(res.toNumber()/(1000000000)+' ETH')});
-		web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price2').html(res2.toNumber()/(1000000000)+' grams')});
-        	web3.eth.contract(abi).at(contract_address).getPrice.call({from: web3.eth.accounts[0], gas:3000000}, function(err1, res1){ web3.eth.contract(abi).at(contract_address).getQuantity.call(userAccount,{from: web3.eth.accounts[0], gas:3000000}, function(err, res2){ $('#price3').html(res1.toNumber()/(1000000000)*res2.toNumber()/(1000000000)+' ETH')});
-		  
 	  }
 	  console.log(userAccount);
         } catch (err) {
