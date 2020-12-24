@@ -322,6 +322,11 @@ color: #eee;
   font-size: 72px;
 }
 
+div.first {
+  background-color: #4CAF50;
+  opacity: 0.1;
+}
+
 
 
 /*---------------------------------------
