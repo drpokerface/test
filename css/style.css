@@ -340,6 +340,7 @@ color: #eee;
 #dark {
 	
   opacity: 1;
+  z-index: 10;
 
 }
 
