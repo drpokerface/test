@@ -338,7 +338,7 @@ color: #eee;
 }
 
 #dark {
-  position: static; /* Sit on top of the page content */
+  position: relative; /* Sit on top of the page content */
   display: block; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
   height: 10%; /* Full height (cover the whole page) */
