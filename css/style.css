@@ -327,6 +327,7 @@ color: #eee;
   display: block; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
+  opacity: 0.2;
   top: 0;
   left: 0;
   right: 0;
