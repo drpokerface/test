@@ -337,6 +337,12 @@ color: #eee;
   cursor: pointer; /* Add a pointer on hover */
 }
 
+#dark {
+	
+  opacity: 1;
+
+}
+
 
 
 /*---------------------------------------
