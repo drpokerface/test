@@ -329,7 +329,7 @@ color: #eee;
   /*height: 100%; /* Full height (cover the whole page) */
   padding-top: -25px;
   opacity: 0.2;
-  top: 0;
+  top: -200px;
   left: 0;
   right: 0;
   bottom: 0;
