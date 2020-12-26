@@ -344,10 +344,10 @@ color: #eee;
   width: 100%; /* Full width (cover the whole page) */
   height: 1%; /* Full height (cover the whole page) */
   opacity: 1;
-  top: 0;
+  top: 250px;
   left: 0;
   right: 0;
-  bottom: 2000px;
+  bottom: 0;
   background-color: rgba(1,1,1,1,1); /* Black background with opacity */
   z-index: 40; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
