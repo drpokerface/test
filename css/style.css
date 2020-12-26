@@ -343,13 +343,13 @@ color: #eee;
   display: block; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
   height: 1%; /* Full height (cover the whole page) */
-  opacity: 1;
+  opacity: 9;
   top: 400px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(1,1,1,1,0.8); /* Black background with opacity */
-  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(1,1,1,1,1); /* Black background with opacity */
+  z-index: 40; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 
 }
