@@ -302,9 +302,9 @@ color: #eee;
 /*---------------------------------------
    Overview  section              
 -----------------------------------------*/
-#overview img {
+#overview {
   position: relative;
-  padding-bottom: 32px;
+  padding-top: -320px;
 }
 
 
