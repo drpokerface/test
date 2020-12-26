@@ -304,11 +304,7 @@ color: #eee;
 -----------------------------------------*/
 #overview img {
   position: relative;
-  padding-top: -250px;
   padding-bottom: 32px;
-}
-#overview {
-  padding-bottom: -250px;
 }
 
 
@@ -331,6 +327,7 @@ color: #eee;
   display: block; /* Hidden by default */
   /*width: 100%; /* Full width (cover the whole page) */
   /*height: 100%; /* Full height (cover the whole page) */
+  padding-top: -25px;
   opacity: 0.2;
   top: 0;
   left: 0;
