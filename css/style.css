@@ -147,7 +147,8 @@ footer {
 #wave{
 	position:absolute;
 	width:100%;
-	padding-top: 1100px;
+	height:5%;
+	padding-top: 900px;
 	/*padding-right: 100px;*/
 	z-index: 100;
 }
