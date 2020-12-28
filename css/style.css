@@ -103,7 +103,7 @@ footer {
     margin-right: 12px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    z-index: 35;
+    z-index: 350;
 
 }
 
@@ -111,7 +111,7 @@ footer {
 #contact .btn-danger {
     background: #4267b2;
     border-color: transparent;
-    z-index: 35;
+    z-index: 350;
 
 }
 
@@ -123,7 +123,7 @@ footer {
   background: #ffffff;
   border-color: #4267b2;
   color: #ffffff;
-  z-index: 35;
+  z-index: 350;
 
 }
 
@@ -135,7 +135,7 @@ footer {
     background: #ffffff;
     color: #333333;
     border-color: #4267b2;
-    z-index: 35;
+    z-index: 350;
 
 }
 
