@@ -158,8 +158,8 @@ footer {
 	position:absolute;
 	width:50%;
 	height:1px;
-	/*padding-top: 1000px;*/
-	padding-bottom: 425px;
+	padding-top: 400px;
+	/*padding-bottom: 425px;*/
 	z-index: 1;
 	pointer-events:none;
 }
