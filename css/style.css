@@ -144,6 +144,10 @@ footer {
   background-size: cover !important;
 }
 
+#wave{
+	position:absolute;
+	padding-top:50px;
+}
 
 
 /*---------------------------------------
