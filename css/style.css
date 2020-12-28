@@ -148,7 +148,8 @@ footer {
 	position:absolute;
 	width:100%;
 	padding-top: 40px;
-	padding-right: 100px;
+	/*padding-right: 100px;*/
+	z-index: 100;
 }
 
 
@@ -347,7 +348,7 @@ color: #222;
   width: 100%; /* Full width (cover the whole page) */
   height: 5%; /* Full height (cover the whole page) */
   opacity: 1;
-  top: 1250px;
+  top: 1400px;
   left: 0;
   right: 0;
   bottom: 0;
