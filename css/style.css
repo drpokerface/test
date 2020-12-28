@@ -162,6 +162,7 @@ footer {
 	/*padding-right: 100px;*/
 	z-index: 1;
 	pointer-events:none;
+}
 	
 #wave3{
 	position:absolute;
@@ -171,6 +172,7 @@ footer {
 	/*padding-right: 100px;*/
 	z-index: 1;
 	pointer-events:none;
+}
 
 #wave4{
 	position:absolute;
@@ -190,6 +192,7 @@ footer {
 	/*padding-right: 100px;*/
 	z-index: 1;
 	pointer-events:none;
+}
 
 #spaced{
 	word-spacing: 5px;
