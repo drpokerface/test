@@ -153,6 +153,10 @@ footer {
 	z-index: 100;
 }
 
+#spaced{
+	word-spacing: 5px;
+}
+
 
 /*---------------------------------------
     Preloader section              
