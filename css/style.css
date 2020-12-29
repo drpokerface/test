@@ -193,12 +193,9 @@ footer {
 	z-index: 1;
 	pointer-events:none;
 }
-#borderd {
-  border: 5px solid #ffffff; /*#d4af37; */
-}
 
-#borderd2 {
-  border: 5px solid #FFFFFF;
+#borderd {
+  border: 5px solid #d4af37;
 }
 
 #spaced{
