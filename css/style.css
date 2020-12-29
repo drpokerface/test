@@ -197,6 +197,10 @@ footer {
   border: 5px solid #d4af37;
 }
 
+#borderd2 {
+  border: 5px solid #ffffff;
+}
+
 #spaced{
 	word-spacing: 5px;
 }
