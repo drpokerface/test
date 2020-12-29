@@ -194,7 +194,7 @@ footer {
 	pointer-events:none;
 }
 #borderd {
-  border: 5px solid #d4af37;
+  border: 5px solid #ffffff; /*#d4af37; */
 }
 
 #borderd2 {
