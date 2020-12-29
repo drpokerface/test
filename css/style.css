@@ -193,6 +193,9 @@ footer {
 	z-index: 1;
 	pointer-events:none;
 }
+#borderd {
+  border: 5px solid #d4af37;
+}
 
 #spaced{
 	word-spacing: 5px;
