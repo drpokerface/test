@@ -153,6 +153,10 @@ footer {
 	word-spacing: 5px;
 }
 
+#zoomout{
+	zoom: 85%;
+}
+
 
 
 /*---------------------------------------
@@ -209,9 +213,10 @@ footer {
 .custom-navbar {
     /*margin-bottom: 100;*/
     padding: 0px;
-    background-color: #101010;
+    background-color: #000000;
     position: fixed;
     margin:0px;
+    border-bottom: 1px solid #050505;
 
 }
 /*
@@ -293,7 +298,7 @@ color: #222;
   align-items: center;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  animation: animation 50s linear infinite;	
+  animation: animation 110s linear infinite;	
 }
 
 @keyframes animation {
@@ -335,7 +340,7 @@ color: #222;
   display: block; /* Hidden by default */
   /*width: 100%; /* Full width (cover the whole page) */
   /*height: 100%; /* Full height (cover the whole page) */
-  opacity: 0.2;
+  opacity: 0.1;
   top: 0;
   left: 0;
   right: 0;
@@ -343,21 +348,23 @@ color: #222;
   background-color: rgba(1,1,1,1,0.8); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  min-width:1000px;
 }
 
 #dark {
   position: absolute; /* Sit on top of the page content */
   display: block; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
-  height: 5%; /* Full height (cover the whole page) */
+  height: 0.005%; /* Full height (cover the whole page) */
   opacity: 1;
-  top: 1100px;
+  top: 139vh;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(1,1,1,1,1); /* Black background with opacity */
   z-index: 40; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+  min-width:1000px;
 
 }
 
