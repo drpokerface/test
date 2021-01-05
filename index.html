@@ -10,7 +10,7 @@ http://www.templatemo.com/tm-486-new-event
 <meta name="author" content="">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/animate.css">
@@ -159,7 +159,7 @@ function myFunction() {
 	
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 12, 2021 15:37:25").getTime();
+var countDownDate = new Date("Jan 19, 2021 7:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -177,13 +177,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "<span style='color:#4267b2; font-size:65px'>d</span> " + hours + "<span style='color:#4267b2; font-size:65px'>h</span> "
+  + minutes + "<span style='color:#4267b2; font-size:65px'>m</span> " + seconds + "<span style='color:#4267b2; font-size:65px'>s</span> ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "Any moment now";
   }
 }, 1000);
 </script>
@@ -238,12 +238,12 @@ var x = setInterval(function() {
 
 			<div class="col-md-12 col-sm-12">
 				<br><br><br><br><br><br><br>
-				<div>
+				<div id="zoomout">
 				<h1 class="wow fadeIn" data-wow-delay="0.4s" style="font-size:112px; font-family:Potra"><span class="wow fadeIn" data-wow-delay="0s"><img src="images/vg.png" width="110" height="110"></span><span style="color:white">virtual</span><span style="color:#d4af37">gold</span></h1>
-				<h3 class="wow fadeIn" data-wow-delay="0.8s" style="font-size:23px"><div style="color:#4267b2">AN  INNOVATIVE  NEW  KIND  OF  CRYPTOCURRENCY</div></h3><br><br><br><br><hr style="width:80%;">
-				<h3 class="wow fadeIn" data-wow-delay="1.2s"><span style="color:white; font-size:27px;"><div id="spaced">WORLD'S FIRST <span style="color:#d4af37">TOKENLESS</span> DIGITAL ASSET STORED ON THE</div>BLOCKCHAIN WHOSE <span style="color:#d4af37">VALUE GROWS</span> UPON<span style="color:#d4af37"> EVERY PURCHASE</span></span></span></h3><hr style="width:80%;"><br><br><br>
+				<h3 class="wow fadeIn" data-wow-delay="0.8s" style="font-size:23px"><div style="color:#4267b2">AN  INNOVATIVE  NEW  KIND  OF  CRYPTOCURRENCY</div></h3><br><br><br><br><hr style="width:70%;">
+				<h3 class="wow fadeIn" data-wow-delay="1.2s"><span style="color:white; font-size:27px;"><div id="spaced">WORLD'S FIRST <span style="color:#d4af37">TOKENLESS</span> DIGITAL ASSET STORED ON THE</div>BLOCKCHAIN WHOSE <span style="color:#d4af37">VALUE GROWS</span> UPON<span style="color:#d4af37"> EVERY PURCHASE</span></span></span></h3><hr style="width:70%;"><br><br><br>
 				<a href="https://etherscan.io/address/0x7b42f8f66f088f0eeb817e17f95354b7b92f1fc3#code" class="btn btn-lg btn-default smoothScroll wow fadeIn" style="color:white" data-wow-delay="2s" style="height: 42px; width: 200px">SMART CONTRACT</a>
-				<a href="https://virtualgold.medium.com/virtual-gold-potentially-the-most-lucrative-project-in-the-cryptocurrency-space-4c8bb6576cd2" class="btn btn-lg btn-default smoothScroll wow fadeIn" style="color:white" data-wow-delay="1.6s" style="height: 42px; width: 200px" >MEDIUM ARTICLE</a>
+				<a href="bgr.pdf" download="goldpaper" class="btn btn-lg btn-default smoothScroll wow fadeIn" style="color:white" data-wow-delay="1.6s" style="height: 42px; width: 200px" >MEDIUM ARTICLE</a>
 				<a href="#overview" class="btn btn-lg btn-danger smoothScroll wow fadeIn" style="color:gold" data-wow-delay="1.6s" style="height: 42px; width: 200px">BUY VIRUAL GOLD</a>
 				<a href="https://t.me/VirtualGoldOfficial" class="btn btn-lg btn-default smoothScroll wow fadeIn" style="color:white" data-wow-delay="1.6s" style="height: 42px; width: 200px">TELEGRAM GROUP</a>
 				<!--<button style="background-color:#4267b2;color:white;width:200px; height:25px;" onclick="location.href='http://www.example.com'" type="button">www.example.com</button>-->
@@ -261,7 +261,7 @@ var x = setInterval(function() {
 <!-- =========================
     OVERVIEW SECTION   
 ============================== -->
-<span class="container" id="dark"><center><h3>Trust me, you dont wanna miss this. Virtualgold pre-sale begins on <span style="color:#4267b2">12th Jan 14:00hrs UTC.</span> Official countdown for launch:</h3></center><center><h1 id="demo" style="font-size:80px;"></h1></center></span>
+<span class="container" id="dark"><center><h3>Trust me, you dont wanna miss this. Virtualgold pre-sale begins on <span style="color:#4267b2">19th Jan 14:00hrs UTC.</span> Official countdown for launch:</h3></center><center><h1 id="demo" style="font-size:100px;"></h1></center></span>
 <section id="overview" class="parallax-section">
 	<!--<center><h2 class="wow bounceIn"><table><tr><td align="right"><span style="color:#4267b2; font-size:30px">You currently own : </span></td><td> <span style="color:black; font-size:30px" id="price2"></span><span style="color:black; font-size:30px"></span></td></tr><tr><td align="right"><span style="font-size:30px">1 gram of virtualgold : </span></td><td> <span style="color:#4267b2; font-size:30px" id="price"></span><span style="color:#4267b2;font-size:30px"> </span></span></td></tr><tr><td align="right"><span style="color:#4267b2; style="font-size:30px">Value of holdings :</span></td><td><span style="font-size:30px"id="price3"> </span></span></td></tr></table><br></div></center></h3><br><br><br><br><hr style="height:0.5px;border-width:0;color:gray;background-color:black"><br>-->
 	<div id="overlayed"><div class="container">
@@ -275,7 +275,7 @@ var x = setInterval(function() {
 				<center><h1>Buy Virtualgold</h1></center>
 				<center><span style="font-size:24px">Amount in ETH </span><input type="number" id="amount" /><br><span style="font-size:24px"></span><input type="text" placeholder="Enter referral address for 1% bonus (optional)" id="userText" style="width: 350px;height: 30px" /></center><br>
 				<center><h4><a  style="background-color:#4267b2; color:white" class="pay-button btn btn-lg btn-default smoothScroll">Invest</a></center></h4></center>
-				<p>Please Note - 29% of investment is used as fees. See below to learn more</p>
+				<!--<p>Please Note - 29% of investment is used as fees. See below to learn more</p> -->
 			</div>
 
 		</div>
@@ -286,14 +286,14 @@ var x = setInterval(function() {
 				<center><h1>Sell Virtualgold</h1></center>
 				<center><span style="font-size:20.5px">Convert virtualgold back into ETH</span><br><span style="font-size:24px">Amount in grams </span><input style="width: 121px;"type="number" id="sellAmount" /></center><br>
 				<h4><center><a style="background-color:#4267b2; color:white" class="sell-button btn btn-lg btn-default smoothScroll">Sell</a></center></h4><div style="line-height:40%;"><br></div>
-				<p>Please Note - The price of virtualgold does not reduce when others sell. But it increases when others buy</p>
+				<!--<p>Please Note - The price of virtualgold does not reduce when others sell. But it increases when others buy</p>-->
 			</div>
 					
 			<div class="wow bounceIn col-md-6 col-sm-6">
 				<center><h1>Transfer Virtualgold</h1></center>
 				<center><span style="font-size:24px">Amount in ETH </span><input type="number" id="amount" /><br><span style="font-size:24px"></span><input type="text" placeholder="Enter referral address for 1% bonus (optional)" id="userText" style="width: 350px;height: 30px" /></center><br>
 				<center><h4><a  style="background-color:#4267b2; color:white" class="pay-button btn btn-lg btn-default smoothScroll">Invest</a></center></h4></center>
-				<p>Please Note - 29% of investment is used as fees. See below to learn more</p>
+				<!--<p>Please Note - 29% of investment is used as fees. See below to learn more</p>-->
 			</div>
 
 		</div>
@@ -443,9 +443,7 @@ var x = setInterval(function() {
                     
 
 				<cetner><ul class="social-icon">
-					<li><a href="https://t.me/VirtualGoldBackup" class="fa fa-paper-plane wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="https://t.me/VirtualGoldOfficial" class="fa fa-paper-plane wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="https://virtualgold.medium.com/virtual-gold-potentially-the-most-lucrative-project-in-the-cryptocurrency-space-4c8bb6576cd2" class="fa fa-medium wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a style="color:#4267b2" href="https://t.me/VirtualGoldCommunity" class="fa fa-paper-plane wow fadeIn" data-wow-delay="0.3s"></a></li>
 				</ul></center>
 
 			</div>
